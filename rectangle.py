@@ -1,37 +1,13 @@
-# def isRectangle(a,b,c,d):
-#     if a== b==c==d:
-#         return True
-#     elif a==b and c==d:
-#         return True
-#     elif a==d and c==b:
-#         return True
-#     elif a==c and b==d:
-#         return True
-#     else:
-#         return False
-# try:
-#     t = int(input())
-#     for tc in range(t):
-#         a,b,c,d = map(int,input().split())
-#         if isRectangle(a,b,c,d) is True:
-#             print("Yes")
-#         else:
-#             print("No")
-# except:
-#     pass
+# Problem code:RECTANGL
 try:
-    t = int(input())
+    t= int(input())
     for tc in range(t):
-        a,b,c,d = map(int,input().split())
-        if (a==b and c==d) or (a==c and b==d) or (a==d and c==b):
-            print("Yes")
+        l1 = list(map(int,input().split()))
+        l1.sort()
+        if l1[0]==l1[1] and l1[2]==l1[3]:
+            print("YES")
         else:
-            print("No")
+            print("NO")
 except:
     pass
 
-# Input
-# 3
-# 1 1 2 2
-# 3 2 2 3
-# 1 2 2 2
