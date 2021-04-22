@@ -1,4 +1,5 @@
 # The Problem Code :PAWRI
+# Inspired From YashRaj Mukhattee
 try:
     t = int(input())
     for tc in range(t):
